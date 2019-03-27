@@ -21,7 +21,11 @@ En sortie: [
 
  */
 
-function getStringsLength(strings) {
+
+function getStringsLength(strings) { // Appel la fonction dans "map1.test"
+  return strings.map (food => { // Appel la fonction a chaque element du tableau strings
+      return food + ' contains ' + food.length + ' characters';
+  })
 }
 
 // Si besoin, tu peux toujours visualiser le résultat avec console.log,
